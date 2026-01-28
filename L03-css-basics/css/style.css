@@ -1,0 +1,134 @@
+/* =========================
+   Base typography & reset
+========================= */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f7f5fb;
+  color: #2d2a32;
+}
+
+/* =========================
+   Headings
+========================= */
+
+h1 {
+  font-size: 2.2rem;
+  color: #4b2e83;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #5e3ea1;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Layout
+========================= */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* =========================
+   Header & Footer
+========================= */
+
+header,
+footer {
+  background-color: #e6ddf5;
+  padding: 1.5rem 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #3e355a;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Sections
+========================= */
+
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(75, 46, 131, 0.08);
+}
+
+/* =========================
+   Portfolio media
+========================= */
+
+figure {
+  margin: 0 0 1.5rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #6a5b8c;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+  color: #6a3dc7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Lists
+========================= */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Skip link (accessibility)
+========================= */
+
+a[href="#main"] {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background-color: #4b2e83;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+a[href="#main"]:focus {
+  left: 10px;
+}

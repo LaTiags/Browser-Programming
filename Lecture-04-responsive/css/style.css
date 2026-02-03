@@ -1,0 +1,235 @@
+/* =========================
+   Base typography & reset
+========================= */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f7f5fb;
+  color: #2d2a32;
+}
+
+/* =========================
+   Headings
+========================= */
+
+h1 {
+  font-size: 2.2rem;
+  color: #4b2e83;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #5e3ea1;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Layout
+========================= */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* =========================
+   Header & Footer
+========================= */
+
+header,
+footer {
+  background-color: #e6ddf5;
+  padding: 1.5rem 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #3e355a;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Sections
+========================= */
+
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(75, 46, 131, 0.08);
+}
+
+/* =========================
+   Portfolio media
+========================= */
+
+figure {
+  margin: 0 0 1.5rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #6a5b8c;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+  color: #6a3dc7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Lists
+========================= */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Skip link (accessibility)
+========================= */
+
+a[href="#main"] {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background-color: #4b2e83;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+a[href="#main"]:focus {
+  left: 10px;
+}
+body.dark {
+  background-color: #1e1b26;
+  color: #f1ecff;
+}
+
+body.dark section {
+  background-color: #2a2438;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #2f2750;
+}
+
+body.dark a {
+  color: #c9a6ff;
+}
+
+/* =========================
+   Animated Buttons
+========================= */
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Violet gradient theme button */
+
+.btn-theme {
+  background: linear-gradient(135deg, #7b4dff, #b388ff);
+  color: white;
+  box-shadow: 0 6px 18px rgba(123, 77, 255, 0.35);
+}
+
+/* Counter button — softer violet */
+
+.btn-counter {
+  background: linear-gradient(135deg, #ede7ff, #d1c4ff);
+  color: #4b2e83;
+  box-shadow: 0 4px 12px rgba(75, 46, 131, 0.15);
+}
+
+/* Hover animation */
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+/* Click press animation */
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Glow pulse effect */
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.35), transparent 60%);
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+/* Dark mode adaptation */
+
+body.dark .btn-counter {
+  background: linear-gradient(135deg, #3a2f5e, #5e3ea1);
+  color: #f1ecff;
+}
+.btn {
+  animation: btnPop 0.5s ease both;
+}
+
+@keyframes btnPop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+

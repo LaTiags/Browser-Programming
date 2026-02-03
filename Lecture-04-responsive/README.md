@@ -1,19 +1,9 @@
-# Lecture 03 – CSS Basics
+# Lecture 04 – JavaScript Basics
 
-## What I implemented this lecture
-- Applied basic typography for readability (font, line-height, headings)
-- Styled the page structure with spacing, layout constraints, and colors
-- Added responsive images and improved visual hierarchy
+## Features implemented
+- Theme toggle (light/dark mode)
+- Click counter with console tracking
 
-## CSS selectors I used (at least 5)
-- body
-- header, footer
-- section
-- img
-- nav a / a:hover
-
-## One thing I struggled with
-- Choosing colors that look good together while keeping good readability and contrast
-
-## One improvement I want to do next
-- Improve the layout further and experiment with more advanced responsive design techniques
+## How to test
+- Click "Toggle theme" button → page switches theme
+- Click "Click counter" button → counter logs in console

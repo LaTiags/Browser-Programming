@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics — Extra Exercises</title>
+  <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Basics — Extra Exercises</h1>
+    <p class="subtitle">Conditionals • Loops • Functions (Student TODO Version)</p>
+
+    <!-- Exercise 9 — Grade -->
+    <div class="card">
+      <h2>Exercise 9 — Grade (Conditionals)</h2>
+      <p>Enter a score (0–100). Use if / else if / else to show A/B/C/D/F.</p>
+      <div class="row">
+        <input type="number" id="scoreInput" placeholder="Score">
+        <button id="btnGrade">Get Grade</button>
+      </div>
+      <p id="gradeOut">Grade: ...</p>
+    </div>
+
+    <!-- Exercise 10 — Even / Odd -->
+    <div class="card">
+      <h2>Exercise 10 — Even / Odd (Function)</h2>
+      <p>Write a small function isEven( n ) and use it to show EVEN/ODD.</p>
+      <div class="row">
+        <input type="number" id="numEvenOdd" placeholder="Number">
+        <button id="btnEvenOdd">Check</button>
+      </div>
+      <p id="evenOddOut">Result: ...</p>
+    </div>
+
+    <!-- Exercise 11 — Countdown -->
+    <div class="card">
+      <h2>Exercise 11 — Countdown (Loop)</h2>
+      <p>Enter a start number. Use a for loop to count down to 0.</p>
+      <div class="row">
+        <input type="number" id="countdownInput" placeholder="Start">
+        <button id="btnCountdown">Go</button>
+      </div>
+      <p id="countdownOut">...</p>
+    </div>
+
+    <!-- Exercise 12 — Sum 1..N -->
+    <div class="card">
+      <h2>Exercise 12 — Sum 1..N (Loop + Function)</h2>
+      <p>Enter N. Use a function + loop to compute 1 + 2 + ... + N.</p>
+      <div class="row">
+        <input type="number" id="nSumInput" placeholder="N">
+        <button id="btnSumN">Compute</button>
+      </div>
+      <p id="sumNOut">Sum: ...</p>
+    </div>
+
+    <!-- Exercise 13 — Repeat Text N Times -->
+    <div class="card">
+      <h2>Exercise 13 — Repeat Text N Times (Loop)</h2>
+      <p>Enter text + times. Use a for loop to build one output string.</p>
+      <div class="row">
+        <input type="text" id="repeatText" placeholder="Text">
+        <input type="number" id="repeatCount" placeholder="Times">
+        <button id="btnRepeat">Repeat</button>
+      </div>
+      <p id="repeatOut">...</p>
+    </div>
+
+    <!-- Exercise 14 — Simple Login -->
+    <div class="card">
+      <h2>Exercise 14 — Simple Login (Conditionals)</h2>
+      <p>Check username + password. If correct → Welcome ✅ else → Error ❌</p>
+      <div class="row">
+        <input type="text" id="loginUser" placeholder="Username">
+        <input type="password" id="loginPass" placeholder="Password">
+        <button id="btnLogin">Login</button>
+      </div>
+      <p id="loginOut">Status: ...</p>
+    </div>
+
+    <!-- Exercise 15 — Min / Max of 3 Numbers -->
+    <div class="card">
+      <h2>Exercise 15 — Min / Max of 3 Numbers (Functions)</h2>
+      <p>Write two functions: min3 and max3 using simple if comparisons.</p>
+      <div class="row">
+        <input type="number" id="x" placeholder="X">
+        <input type="number" id="y" placeholder="Y">
+        <input type="number" id="z" placeholder="Z">
+        <button id="btnMinMax">Find</button>
+      </div>
+      <p id="minMaxOut">...</p>
+    </div>
+
+    <!-- Exercise 16 — Multiplication Table -->
+    <div class="card">
+      <h2>Exercise 16 — Multiplication Table (Loops + Function)</h2>
+      <p>Enter a number. Generate a 1..10 multiplication table.</p>
+      <div class="row">
+        <input type="number" id="tableN" placeholder="Number">
+        <button id="btnTable">Generate</button>
+      </div>
+      <p id="tableOut">...</p>
+    </div>
+
+    <hr>
+    <p style="text-align: center; color: #888;">
+      Browser Programming — Lecture 4 (Student TODO)
+    </p>
+  </div>
+
+  <script src="exercise.js"></script>
+</body>
+</html>

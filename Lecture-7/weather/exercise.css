@@ -1,0 +1,103 @@
+/* Style global avec un dégradé léger par défaut */
+body {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f0f2f5;
+    color: #1a1a1b;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Grille de boutons intelligente */
+.row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap; /* Les boutons passent à la ligne si besoin */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #dcdde1;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* La boîte de résultats */
+#weatherBox {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px); /* Effet de flou moderne */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+#weatherBox p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+#weatherBox span {
+    color: #3498db;
+    font-weight: 800;
+}
+
+/* Zone de debug */
+#output {
+    background: #2c3e50;
+    color: #bdc3c7;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* ETATS DYNAMIQUES (Le dashboard change selon la température) */
+
+/* Mode FROID (< 0°C) */
+.cold {
+    background-color: #d6eaf8; /* Bleu givré */
+    background-image: linear-gradient(135deg, #d6eaf8 0%, #ebf5fb 100%);
+}
+.cold #weatherBox span { color: #2980b9; }
+.cold h1 { color: #2980b9; }
+
+/* Mode DOUX (>= 0°C) */
+.mild {
+    background-color: #fef9e7; /* Jaune soleil doux */
+    background-image: linear-gradient(135deg, #fef9e7 0%, #fcf3cf 100%);
+}
+.mild #weatherBox span { color: #d35400; }
+.mild h1 { color: #d35400; }
